@@ -1,11 +1,12 @@
 /* ********** Custom Properties ********** */
+/* Sección donde se definen variables personalizadas */
 :root {
   --first-color: #b9b9b9;
-  --first-alpha-color: rgba(217, 0, 98, 0.75);
-  --second-color: #14192d;
-  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --first-alpha-color: rgba(217, 0, 98, 0.75); /* Color primario */
+  --second-color: #14192d; /* Segundo color */
+  --second-alpha-color: rgba(20, 25, 45, 0.75); /* Segundo color con transparencia */
   --third-color: #501464;
-  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --third-alpha-color: rgba(80, 20, 100, 0.75); /* Tercer color con transparencia */    
   --white-color: #fff;
   --gray-light-color: #f3f3f3;
   --gray-color: #ccc;
@@ -16,52 +17,56 @@
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
-  --font: "Raleway", sans-serif;
-  --max-width: 1200px;
-  --header-height: 4rem;
+  --font: "Raleway", sans-serif; /* Fuente del texto */
+  --max-width: 1200px; /* Ancho máximo del sitio */
+  --header-height: 4rem; /* Altura del encabezado */
 }
 
 
 /* ********** Reset ********** */
-/* **********Validado y funcional********** */
+/* Estilos de reseteo básicos para elementos HTML */
 html {
   /*modelo de caja validado*/
-  box-sizing: border-box;
-  font-family: var(--font);
-  font-size: 16px;
+  box-sizing: border-box; /* Modelo de caja border-box */
+  font-family: var(--font); /* Fuente del texto */
+  font-size: 16px; /* Tamaño de fuente base */
   /*Efecto menu*/
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Efecto de desplazamiento suave */
 }
 
+/* Estilos de reseteo para todos los elementos */
 *,
 *::after,
 *::before {
   box-sizing: inherit;
 }
-
+/* Estilos básicos para el cuerpo del sitio */
 body {
-  margin: 0;
-  overflow-x: hidden;
-  color: var(--text-color);
+  margin: 0; /* Eliminar márgenes predeterminados */
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+  color: var(--text-color); /* Color del texto */
 }
 
+/* Estilos para enlaces */
 a {
-  color: var(--link-color);
-  transition: all 0.5s ease-out;
+  color: var(--link-color); /* Color del enlace */
+  transition: all 0.5s ease-out; /* Transición suave */
 }
 
+/* Estilos para enlaces al pasar el ratón */
 a:hover {
-  opacity: 0.75;
+  opacity: 0.75; /* Opacidad reducida */
 }
 
+/* Estilos para títulos de diferentes niveles */
 h1 {
   margin: 0;
   font-size: 2rem;
 }
 
 h2 {
-  margin: 0;
-  font-size: 1.5rem;
+  margin: 0; /* Elimina márgenes predeterminados */
+  font-size: 1.5rem; 
 }
 
 h3 {
@@ -84,19 +89,23 @@ h6 {
   font-size: 0.7rem;
 }
 
+/* Estilos para imágenes */
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Ancho máximo del 100% */
+  height: auto; /* Altura automática */
 }
 
+/* Estilos para párrafos */
 p {
-  line-height: 1.6;
+  line-height: 1.6; /* Altura de línea */
 }
 
 /* ********** Components ********** */
 
 /* ********** Carousel ********** */
+/* Estilos para un carrusel de imágenes */
 @keyframes carousel-slide {
+  /* Animación para deslizar las imágenes */
   0% {
     transform: translateX(0%);
   }
@@ -114,6 +123,7 @@ p {
   }
 }
 
+/* Estilos del contenedor del carrusel */
 .carousel {
   margin: 2rem auto;
   padding: 2rem 0;
@@ -123,6 +133,7 @@ p {
   background-color: var(--carousel-bg-color);
 }
 
+/* Estilos para los slides del carrusel */
 .carousel .slides {
   padding-left: 0;
   /* 100% por cada slide */
@@ -171,7 +182,7 @@ p {
 }
 
 /* ********** Contact Form ********** */
-
+/* Estilos para un formulario de contacto */
 .contact-form {
   margin: 2rem auto;
   padding: 1rem;
@@ -257,6 +268,7 @@ p {
 }
 
 /* ********** HeroImage ********** */
+/* Estilos para una imagen de héroe */
 .hero-image {
   background-image: var(--hero-image);
   background-repeat: no-repeat;
@@ -281,6 +293,7 @@ p {
 }
 
 /* ********** Menu ********** */
+/* Estilos para el menú de navegación */
 .menu-btn {
   outline: thin solid var(--first-color);
   border: 0;
@@ -351,6 +364,7 @@ p {
 }
 
 /* ********** Modal ********** */
+/* Estilos para un modal emergente */
 .modal {
   position: fixed;
   z-index: 999;
@@ -389,7 +403,7 @@ p {
 }
 
 /* ********** ProgressBar ********** */
-
+/* Estilos para una barra de progreso */
 progress {
   width: 100%;
   height: 1rem;
@@ -420,6 +434,7 @@ progress::-moz-progress-bar {
 }
 
 /* ********** Utilities ********** */
+/* Clases de utilidad para estilos genéricos */
 .avatar {
   border-radius: 50%;
   width: 150px;
@@ -509,6 +524,7 @@ progress::-moz-progress-bar {
 }
 
 /* ********** Site Styles ********** */
+/* Estilos específicos para diferentes secciones del sitio */
 .about > article {
   margin-bottom: 2rem;
 }
