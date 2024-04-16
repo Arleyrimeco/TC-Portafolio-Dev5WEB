@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <!-- se agrega normalize para resetar los estilos por defecto del navegador -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles_registro.css">
+    <title>Dev5WEB</title>
+</head>
+<body>
+    <main class="main">
+        <section class="section-laptop">
+            <div class="texto-laptop">
+                <h2>Dev5WEB: donde la creatividad y la experiencia se unen para impulsar el desarrollo web.</h2>
+            </div>
+            <div class="hero-latop">
+                <img src="assets/hero_registro.jpg" alt="imagen del laptop">
+            </div>
+        </section>
+        <section class="section-formulario">
+            <h3>Crear una cuenta</h3>
+            <form class="formulario-registro">
+                <fieldset class="caja-input">
+                    <label class="formulario-label" for="nombres" >Nombre y apellido :</label>
+                    <input class="formulario-input" id="nombres" type="text" class="form-control" placeholder="Escribe tu nombre:">
+                </fieldset>
+                <fieldset class="caja-input">
+                    <label class="formulario-label" for="correo" >Correo :</label>
+                    <input class="formulario-input" id="correo" type="email"  placeholder="Registra tu correo">
+                </fieldset>
+                <fieldset class="caja-input">
+                    <label class="formulario-label" for="contrasenaRep" >Repetir contraseña :</label>
+                    <input class="formulario-input" id="contrasenaRep" type="password"  placeholder="Escribe una contraseña">
+                </fieldset>
+                <fieldset class="caja-input">
+                    <label class="formulario-label" for="contrasenaRep" >Repetir contraseña :</label>
+                    <input class="formulario-input" id="contrasenaRep" type="password"  placeholder="Escribe una contraseña">
+                </fieldset>
+                <fieldset class="caja-input checkbox">
+                    <input id="terminos" class="" type="checkbox">
+                    <label class="formulario-label" for="terminos" >Acepto los términos y condiciones</label>
+                </fieldset>
+                <div class="box-botones">
+                    <button class="button-primario">Registrarse</button>
+                    <button class="button-secundario"><a href="login.html">Iniciar sesión</a></button>
+                </div>
+            </form>
+        </section>
+        <section class="section-wave">
+            <img src="assets/wave.svg" alt="wave">
+            <div class="titulo">
+                <h1>Dev5WEB</h1>
+            </div>
+        </section>
+    </main>    
+</body>
+</html>

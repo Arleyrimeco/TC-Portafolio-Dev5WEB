@@ -1,0 +1,142 @@
+
+/*Definimos los custom propierties de la apliacion*/
+:root{
+    --colorPrimario:#0088ff;
+    --colorSecundario:#df3ebc;
+    --colorTerciario:#9674e4;
+    /*Definimos las variables de fuente de nuestro proyecto*/
+    --fuentePrincipal: "Roboto", sans-serif;
+}
+
+/*Definimos los estilos globales del proyecto*/
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuentePrincipal);
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    height: 100%;
+}
+h1, h2, h3, h4{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/*main*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+/*titulo*/
+.caja-titulo{
+    width: 100%;
+}
+.caja-titulo h1{
+    font-size: 3.5rem;
+    color: var(--colorPrimario);
+    font-weight: 500;
+}
+/*formulario*/
+.section-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap:1rem;
+}
+.section-formulario h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--colorTerciario);
+}
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.caja-input {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    gap: .5rem;
+}
+.checkbox{
+    flex-direction: row;
+}
+.formulario-label {
+    color: var(--colorTerciario);
+    font-weight: 500;
+}
+.formulario-input {
+    padding: .5rem;
+}
+.formulario-input:focus{
+    outline: none;
+    border: solid var(--colorTerciario);
+}
+
+.box-botones {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: .5rem;
+    gap: 1rem;
+}
+@media (min-width:1000px){
+    .box-botones{
+        flex-direction: row;
+    }
+}
+.button-primario {
+    background-color: var(--colorSecundario);
+    border: solid .2rem var(--colorSecundario);
+    border-radius: .5rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    transition: background-color .3s ease, border .3s ease;
+}
+.button-primario:hover{
+    cursor: pointer;
+    background-color:#ea67d1 ;
+    border:solid .2rem#ea67d1 ;
+}
+.button-secundario {
+    background-color: transparent;
+    border: solid .2rem var(--colorSecundario);
+    border-radius: .5rem;
+    color: #000000;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    transition: color .3s ease, border-color .3s ease;
+}
+.button-secundario:hover{
+    cursor: pointer;
+    color: #ea67d1; 
+    border-color: #ea67d1; 
+}

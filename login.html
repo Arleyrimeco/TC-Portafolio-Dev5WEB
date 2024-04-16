@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <!-- se agrega normalize para resetar los estilos por defecto del navegador -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles_login.css">
+    <title>Dev5WEB</title>
+</head>
+<body>
+    <main class="main">
+        <div class="caja-titulo">
+            <h1>Dev5WEB</h1>
+        </div>
+        <section class="section-formulario">
+            <h3>Inicia Sesión</h3>
+            <form class="formulario-registro">
+                <fieldset class="caja-input">
+                    <label class="formulario-label" for="correo" >Correo Electronico :</label>
+                    <input class="formulario-input" id="correo" type="email" placeholder="ejemplo@gmail.com">
+                </fieldset>
+                <fieldset class="caja-input">
+                    <label class="formulario-label" for="contrasena" >Contraseña :</label>
+                    <input class="formulario-input" id="contrasena" type="password"  placeholder="Ingresa tu contraseña">
+                </fieldset>
+                <div class="box-botones">
+                    <button class="button-primario">Iniciar sesión</button>
+                    <button class="button-secundario"><a href="registro.html">Registrarse</a></button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
