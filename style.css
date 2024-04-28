@@ -747,4 +747,89 @@ progress::-moz-progress-bar {
   .services .section-title {
     grid-column: span 3;
   }
-}
+
+#dir{ top: 899px; 
+  max-width: 8%;
+ height: auto;
+ margin: 10px;
+ padding: 5px;
+  }
+  
+ #dir2{ 
+ top: 896px; 
+  max-width: 8%;
+ height: auto;
+ margin: 10px;
+ padding: 5px;
+  }
+  
+  #dir3{ top: 900px; 
+  max-width: 8%;
+ height: auto;
+ margin: 5px;
+ padding: 2px;
+  }
+ 
+ 
+ #tituto{
+ width: 311px;
+ height: 77px;
+ top: 110px;
+ left: 94px;
+ gap: 0px;
+ opacity: 0px;
+ font-family: Inter;
+ font-size: 64px;
+ font-weight: 700;
+ line-height: 77.45px;
+ text-align: left;
+ color:  #7D53DE;
+ }
+ 
+ #parrafo {width: 400px;
+ height: 140px;
+ top: 362px;
+ left: 835px;
+ gap: 0px;
+ opacity: 0px;
+ font-family: Inter;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 16.94px;
+ text-align: left;
+ color: #757272;}
+ 
+ .cta-button {
+   background-color: #7D53DEDE; /* Color de fondo del botÃ³n */
+   color: #fff; /* Color del texto del botÃ³n en blanco */
+   padding: 10px 20px; /* Relleno del botÃ³n */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
+   font-size: 18px;
+   display: inline-block;
+ }
+ 
+ .bt2 {
+   background-color: #7D53DEDE; /* Color de fondo del botÃ³n */
+   color: #fff; /* Color del texto del botÃ³n en blanco */
+   padding: 10px 20px; /* Relleno del botÃ³n */
+   border: none; /* Sin borde */
+   border-radius: 5px; /* Bordes redondeados */
+   font-size: 18px;
+    display: inline-block;
+ }
+ 
+ 
+ #img1{
+     max-width: 100%;
+ height: auto;
+ margin: 20px;
+ padding: 1px;
+ display: 100px;
+ margin: 5px;
+ 
+ }
+ 
+ #img2 {
+   float: right;
+ }
