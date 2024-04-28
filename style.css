@@ -1,7 +1,7 @@
 /* ********** Custom Properties ********** */
 /* Sección donde se definen variables personalizadas */
 :root {
-  --first-color: #b9b9b9;
+  --first-color: #8d8c8c;
   --first-alpha-color: rgba(217, 0, 98, 0.75); /* Color primario */
   --second-color: #14192d; /* Segundo color */
   --second-alpha-color: rgba(20, 25, 45, 0.75); /* Segundo color con transparencia */
